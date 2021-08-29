@@ -7,6 +7,9 @@ export const LINKS = {
 }
 export const DATE_UPDATED = "August 29, 2021";
 
+// Menu
+export const SECTIONS = ['me', 'projects'];
+
 // Banner
 export const TITLES = [
   "Sofie",

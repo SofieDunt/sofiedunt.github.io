@@ -1,0 +1,44 @@
+.menu-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+.bar {
+  width: 35px;
+  height: 3px;
+  margin: 6px 0;
+  background: var(--lightblue);
+  border-radius: 1px;
+}
+
+.x1 {
+  transform: rotate(45deg) translate(7px, 5px);
+}
+
+.x2 {
+  transform: rotate(-45deg);
+}
+
+.drop-down {
+  position: fixed;
+  top: 55px;
+  right: 20px;
+  z-index: 3;
+  text-align: center;
+}
+
+.drop-down a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.item {
+  background: black;
+  width: 175px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--lightblue);
+  border-bottom: 2px solid var(--lightblue);
+}
