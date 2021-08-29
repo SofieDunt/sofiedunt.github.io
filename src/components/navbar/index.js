@@ -1,10 +1,11 @@
 import React from 'react';
 import './navbar.css';
+import {NAME} from "../../content";
 
 function NavBar() {
   return (
       <div className={'nav-container'}>
-        <a href={'/'}>Sofie Duntugan</a>
+        <a href={'/'}>{NAME}</a>
       </div>
   );
 }

@@ -1,0 +1,50 @@
+.banner {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 35vh 5vw 30px;
+  color: white;
+  background: var(--navy);
+}
+
+.greeting-container {
+  font-size: 32px;
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+.about-container {
+  color: var(--lightblue);
+  padding-bottom: 100px;
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.contacts {
+  width: 100%;
+  text-align: right;
+}
+
+.contacts img {
+  height: 45px;
+}
+
+@media (max-width: 1099px) {
+  .greeting-container {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 613px) {
+  .banner {
+    padding-top: 25vh;
+  }
+
+  .greeting-container {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 469px) {
+  .greeting-container {
+    font-size: 26px;
+  }
+}
