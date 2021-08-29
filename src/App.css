@@ -4,10 +4,14 @@
   --navy: #052A57;
   --blue: #004cb0;
   --lightblue: #E3EAF4;
+  --font-one: "Noto Sans SC";
+  --font-two: "Nunito Sans";
+  --font-default: sans-serif;
 }
 
 .app {
   box-sizing: border-box;
-  min-width: 200px;
+  min-width: 300px;
   width: 100vw;
+  font-family: var(--font-one), var(--font-default);
 }

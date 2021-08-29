@@ -1,8 +1,9 @@
 .nav-container {
-  position: absolute;
+  position: fixed;
+  top: 0;
   z-index: 2;
   box-sizing: border-box;
-  min-width: 200px;
+  min-width: 300px;
   width: 100vw;
   height: 75px;
   background: var(--grey);
@@ -12,7 +13,7 @@
 .nav-container a {
   color: white;
   font-size: 22px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--font-one), var(--font-default);
   text-transform: uppercase;
   text-decoration: none;
 }

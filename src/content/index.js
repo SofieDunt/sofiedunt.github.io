@@ -1,9 +1,11 @@
 // General
 export const NAME = "Sofie Duntugan";
+export const EMAIL = "duntugan.s@northeastern.edu";
 export const LINKS = {
-  EMAIL: "mailto:duntugan.s@northeastern.edu",
+  EMAIL: "mailto:" + EMAIL,
   GITHUB: "https://github.com/SofieDunt"
 }
+export const DATE_UPDATED = "August 29, 2021";
 
 // Banner
 export const TITLES = [
