@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './banner.css';
-import {ABOUT_ME, LINKS, TITLES} from "../../content";
+import {ABOUT_ME, Links, TITLES} from "../../content";
 
 function Banner() {
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -50,11 +50,11 @@ function Banner() {
       </div>
 
       <div className="contacts">
-        <a href={LINKS.EMAIL}>
+        <a href={Links.EMAIL}>
           <img src="https://img.icons8.com/material-rounded/96/ffffff/mail.png"
                alt="E-mail"/>
         </a>
-        <a href={LINKS.GITHUB}>
+        <a href={Links.GITHUB}>
           <img src="https://img.icons8.com/ios-glyphs/480/ffffff/github.png"
                alt="Github"/>
         </a>

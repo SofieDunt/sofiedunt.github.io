@@ -1,14 +1,18 @@
 // General
 export const NAME = "Sofie Duntugan";
 export const EMAIL = "duntugan.s@northeastern.edu";
-export const LINKS = {
+export const Links = {
   EMAIL: "mailto:" + EMAIL,
   GITHUB: "https://github.com/SofieDunt"
 }
-export const DATE_UPDATED = "August 29, 2021";
+export const DATE_UPDATED = "November 13, 2021";
 
 // Menu
-export const SECTIONS = ['me', 'projects'];
+export const Sections = {
+  ME: 'me',
+  PROJECTS: 'projects'
+};
+export const SECTIONS = [Sections.ME, Sections.PROJECTS];
 
 // Banner
 export const TITLES = [
