@@ -3,14 +3,15 @@ import './App.css';
 import NavBar from "./components/navbar";
 import Banner from "./components/banner";
 import Footer from "./components/footer";
-import Menu from "./components/menu";
 
 function App() {
   return (
-    <div className="app">
+    <div className={"app"}>
       <NavBar />
-      <Menu />
       <Banner />
+      <div className={"body"}>
+      </div>
+
       <Footer />
     </div>
   );

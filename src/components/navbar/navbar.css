@@ -17,3 +17,21 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.links {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+}
+
+.item {
+  display: inline-block;
+  text-align: right;
+  padding: 0 20px;
+  font-size: 18px;
+  color: var(--lightblue);
+}
+
+.active {
+  text-decoration: underline;
+}
