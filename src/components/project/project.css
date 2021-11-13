@@ -1,0 +1,46 @@
+.card {
+  box-sizing: border-box;
+  width: 400px;
+  height: 250px;
+  border: solid 1px var(--lightblue);
+  font-family: var(--font-one), var(--font-default);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  box-shadow: 10px 10px var(--grey);
+  margin-bottom: 20px;
+}
+
+.card img {
+  max-width: 250px;
+  max-height: 249px;
+}
+
+.active-card {
+  padding: 20px;
+  display: block;
+}
+
+.card-body {
+  display: inline-block;
+  height: 100%;
+  vertical-align: center;
+  text-align: center;
+  line-height: 175px;
+  flex-grow: 2;
+}
+
+.card .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--navy);
+  display: inline-block;
+}
+
+.link-title {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 26px;
+  color: var(--navy);
+  display: inline-block;
+}

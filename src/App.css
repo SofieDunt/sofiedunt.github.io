@@ -4,6 +4,7 @@
   --navy: #052A57;
   --blue: #004cb0;
   --lightblue: #E3EAF4;
+  --readable-lightblue: #6A90C4;
   --font-one: "Noto Sans SC";
   --font-two: "Nunito Sans";
   --font-default: sans-serif;
@@ -18,4 +19,17 @@
 
 .body {
   padding: 50px 5vw;
+}
+
+.title {
+  width: 100%;
+  font-family: var(--font-one), var(--font-default);
+  font-size: 32px;
+  color: var(--readable-lightblue);
+}
+
+.flex-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }

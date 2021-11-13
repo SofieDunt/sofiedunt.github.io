@@ -3,7 +3,9 @@ export const NAME = "Sofie Duntugan";
 export const EMAIL = "duntugan.s@northeastern.edu";
 export const Links = {
   EMAIL: "mailto:" + EMAIL,
-  GITHUB: "https://github.com/SofieDunt"
+  GITHUB: "https://github.com/SofieDunt",
+  SFTT: "https://treeboston.org/",
+  SFTT_SITE: "https://map.treeboston.org/",
 }
 export const DATE_UPDATED = "November 13, 2021";
 
