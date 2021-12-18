@@ -1,0 +1,37 @@
+.badge {
+  height: 25px;
+  min-width: 20px;
+  border-radius: 15px;
+  padding: 2px 10px;
+  font-family: var(--font-code), var(--font-default);
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+  border: solid 1px;
+}
+
+.badge p {
+  margin: 0;
+}
+
+.red {
+  background: #FCD4D4;
+  border-color: #820707;
+}
+
+.blue {
+  background: #CCE6FF;
+  border-color: #073057;
+}
+
+.purple {
+  background: #D2D2FC;
+  border-color: #1A1A40;
+}
+
+.green {
+  background: #D9FFE2;
+  border-color: #044214;
+
+}

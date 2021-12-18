@@ -7,6 +7,7 @@
   --readable-lightblue: #6A90C4;
   --font-one: "Noto Sans SC";
   --font-two: "Nunito Sans";
+  --font-code: "Fira Code";
   --font-default: sans-serif;
 }
 
@@ -59,7 +60,7 @@
 }
 
 .code-button {
-  font-family: "Fira Code", sans-serif;
+  font-family: var(--font-code), var(--font-default);
   font-size: 12px;
   padding: 2px 8px;
   background: white;

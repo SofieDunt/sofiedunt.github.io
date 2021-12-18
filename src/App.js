@@ -3,12 +3,13 @@ import './App.css';
 import NavBar from "./components/navbar";
 import Banner from "./components/banner";
 import Footer from "./components/footer";
-import {SectionIds, Links, BUTTERFLIES} from "./content";
+import { SectionIds, Links, BUTTERFLIES } from "./content";
 import Project from "./components/project";
 import Logo from "./content/logo.png";
 import SFTTSite from "./content/SFTTSite.png";
 import Saga from "./content/saga.png";
 import PlantCam from "./content/PlantCam.png";
+import { DefaultBadges } from "./components/badge/defaults";
 
 function App() {
   const [activePhoto, setActivePhoto] = useState(0);
@@ -34,6 +35,7 @@ function App() {
               date={'Aug 2020-Present'}
               link={Links.SFTT_SITE}
               image={SFTTSite}
+              badges={[DefaultBadges.REACT, DefaultBadges.TS, DefaultBadges.JAVA, DefaultBadges.VERTX]}
             />
             <Project
               title={"plantCam"}
@@ -41,6 +43,7 @@ function App() {
               date={"Aug 2021-Present"}
               link={Links.PLANT_CAM}
               image={PlantCam}
+              badges={[DefaultBadges.R]}
             />
           </div>
         </div>
@@ -53,6 +56,7 @@ function App() {
                 body={<p>a site designed in Figma and created with React to keep track of my latest experiences.</p>}
                 date={'November 2021'}
                 image={Logo}
+                badges={[DefaultBadges.REACT, DefaultBadges.JS]}
             />
             <Project
                 title={'Digital Equity Research'}
@@ -67,12 +71,14 @@ function App() {
                 date={"July 2021"}
                 link={Links.SAGA}
                 image={Saga}
+                badges={[DefaultBadges.JAVA, DefaultBadges.SPRING, DefaultBadges.REACT, DefaultBadges.TS]}
             />
             <Project
                 title={'Photo Editor'}
                 body={<p>an application capable of importing images to, exporting images from, and modifying images in a user's photo library. written in Java and tested with JUnit.</p>}
                 date={'June 2021'}
                 image={BUTTERFLIES[activePhoto].img}
+                badges={[DefaultBadges.JAVA]}
             >
               <p className={'small-text'}>Supported modifications include:</p>
               <div className={'flex-section'}>

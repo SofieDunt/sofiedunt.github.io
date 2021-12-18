@@ -33,7 +33,7 @@
   padding: 20px;
   display: block;
   box-shadow: -10px -10px var(--grey);
-  transition: box-shadow 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .card-body {
@@ -71,6 +71,12 @@
 
 .child-body {
   margin: 0;
+}
+
+.badge-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 @media (max-width: 400px) {
