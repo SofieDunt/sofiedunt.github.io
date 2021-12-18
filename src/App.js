@@ -81,8 +81,8 @@ function App() {
         </div>
       </div>
 
-      <div className={"padded"} id={SectionIds.REQUEST}>
-        <p>Code that is not public <a href={Links.GITHUB}>on my GitHub</a> may be viewed upon <a href={Links.EMAIL}>request</a>.</p>
+      <div className={"padded footnotes"} id={SectionIds.FOOTNOTES}>
+        <p>Code that is not public <a href={Links.GITHUB}>on my GitHub</a> may be viewed upon <a href={Links.EMAIL}>request</a>. <a href={'https://icons8.com/'}>Github, Mail, Menu, and Close Icons by Icons8</a>.</p>
       </div>
       <Footer />
     </div>

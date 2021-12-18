@@ -63,3 +63,9 @@
   text-transform: uppercase;
   border: solid 1px black;
 }
+
+.footnotes {
+  font-size: 11px;
+  margin: 0;
+  line-height: 11px;
+}
