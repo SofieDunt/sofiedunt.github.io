@@ -37,9 +37,9 @@ function Project(props) {
             <h2 className={"title"}>{props.title}</h2>
             <div className={"child-body"}>{props.children}</div>
           </div>
-          <span className={"card-image"}>
+          <div className={"card-image"}>
             <img src={props.image} alt={"Project"} onClick={onClickMe} />
-          </span>
+          </div>
         </div>
     );
   }

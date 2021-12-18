@@ -11,9 +11,17 @@
   margin-bottom: 20px;
 }
 
+.card-image {
+  width: 250px;
+  height: 248px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .card img {
-  max-width: 250px;
-  max-height: 249px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .active-card {
@@ -56,4 +64,16 @@
 
 .child-body {
   margin: 0;
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 90vw;
+    height: 275px;
+    font-size: 15px;
+  }
+
+  .card-image {
+    min-width: 30%;
+  }
 }
