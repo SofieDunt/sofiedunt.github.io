@@ -34,11 +34,11 @@ function Project(props) {
     return (
         <div className={"card"} onClick={onClickMe}>
           <div className={"card-body"} onClick={onClickMe}>
-            <h2 className={"title"}>{props.title}</h2>
+            <h2 className={"title"} onClick={onClickMe}>{props.title}</h2>
             <div className={"child-body"}>{props.children}</div>
           </div>
-          <div className={"card-image"}>
-            <img src={props.image} alt={"Project"} onClick={onClickMe} />
+          <div className={"card-image"} onClick={() => setActive(true)}>
+            <img src={props.image} alt={"Project"} />
           </div>
         </div>
     );

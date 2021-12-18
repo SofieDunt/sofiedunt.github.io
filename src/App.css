@@ -17,25 +17,35 @@
   font-family: var(--font-one), var(--font-default);
 }
 
-.body {
-  padding: 50px 5vw;
-}
-
 .padded {
   padding: 0 5vw;
 }
 
-.title {
+.section {
+  padding: 75px 5vw 0;
+}
+
+.section h1 {
   width: 100%;
   font-family: var(--font-one), var(--font-default);
   font-size: 32px;
   color: var(--readable-lightblue);
+  transition: all 0.3s ease-in-out;
+}
+
+.section:hover h1 {
+  transform: translateX(20px);
+  color: var(--navy);
 }
 
 .flex-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.card-section {
+  row-gap: 20px;
 }
 
 .inline-flex {
