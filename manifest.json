@@ -1,0 +1,15 @@
+{
+  "short_name": "Sofie Duntugan",
+  "name": "Sofie Duntugan Portfolio",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "540x546",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#052A57",
+  "background_color": "#3B4358"
+}

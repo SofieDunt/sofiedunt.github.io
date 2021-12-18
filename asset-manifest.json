@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/SofieDunt/react-portfolio/static/css/main.4e98bed7.chunk.css",
+    "main.js": "/SofieDunt/react-portfolio/static/js/main.6f151c2d.chunk.js",
+    "main.js.map": "/SofieDunt/react-portfolio/static/js/main.6f151c2d.chunk.js.map",
+    "runtime-main.js": "/SofieDunt/react-portfolio/static/js/runtime-main.9c45e570.js",
+    "runtime-main.js.map": "/SofieDunt/react-portfolio/static/js/runtime-main.9c45e570.js.map",
+    "static/js/2.712b792f.chunk.js": "/SofieDunt/react-portfolio/static/js/2.712b792f.chunk.js",
+    "static/js/2.712b792f.chunk.js.map": "/SofieDunt/react-portfolio/static/js/2.712b792f.chunk.js.map",
+    "static/js/3.62e524dd.chunk.js": "/SofieDunt/react-portfolio/static/js/3.62e524dd.chunk.js",
+    "static/js/3.62e524dd.chunk.js.map": "/SofieDunt/react-portfolio/static/js/3.62e524dd.chunk.js.map",
+    "index.html": "/SofieDunt/react-portfolio/index.html",
+    "static/css/main.4e98bed7.chunk.css.map": "/SofieDunt/react-portfolio/static/css/main.4e98bed7.chunk.css.map",
+    "static/js/2.712b792f.chunk.js.LICENSE.txt": "/SofieDunt/react-portfolio/static/js/2.712b792f.chunk.js.LICENSE.txt",
+    "static/media/PlantCam.ef0c1cfc.png": "/SofieDunt/react-portfolio/static/media/PlantCam.ef0c1cfc.png",
+    "static/media/SFTTSite.d9fa6537.png": "/SofieDunt/react-portfolio/static/media/SFTTSite.d9fa6537.png",
+    "static/media/butterflyBlur.6ad69536.PNG": "/SofieDunt/react-portfolio/static/media/butterflyBlur.6ad69536.PNG",
+    "static/media/butterflyDownscale.251f48c6.png": "/SofieDunt/react-portfolio/static/media/butterflyDownscale.251f48c6.png",
+    "static/media/butterflyMonochrome.345037cc.PNG": "/SofieDunt/react-portfolio/static/media/butterflyMonochrome.345037cc.PNG",
+    "static/media/butterflyMosaic.98c2384f.PNG": "/SofieDunt/react-portfolio/static/media/butterflyMosaic.98c2384f.PNG",
+    "static/media/butterflySepia.14d50ea8.PNG": "/SofieDunt/react-portfolio/static/media/butterflySepia.14d50ea8.PNG",
+    "static/media/butterflySharpen.06f9fdc7.PNG": "/SofieDunt/react-portfolio/static/media/butterflySharpen.06f9fdc7.PNG",
+    "static/media/default.6b97da29.PNG": "/SofieDunt/react-portfolio/static/media/default.6b97da29.PNG",
+    "static/media/logo.2706d6a8.png": "/SofieDunt/react-portfolio/static/media/logo.2706d6a8.png",
+    "static/media/saga.899ebb28.png": "/SofieDunt/react-portfolio/static/media/saga.899ebb28.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c45e570.js",
+    "static/js/2.712b792f.chunk.js",
+    "static/css/main.4e98bed7.chunk.css",
+    "static/js/main.6f151c2d.chunk.js"
+  ]
+}
