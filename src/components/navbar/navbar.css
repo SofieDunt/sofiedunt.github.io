@@ -38,3 +38,24 @@
 .active {
   text-decoration: underline;
 }
+
+.mobile-menu {
+  background: var(--lightblue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 50px;
+}
+
+.mobile-links {
+  width: 100vw;
+  text-align: center;
+}
+
+.mobile-item {
+  line-height: 50px;
+  font-size: 20px;
+  color: var(--navy);
+}
