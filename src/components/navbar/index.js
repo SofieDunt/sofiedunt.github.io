@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import {NAME, SECTIONS} from "../../content";
+import {NAME, MenuSections, SectionNames} from "../../content";
 
 function NavBar() {
   const [active, setActive] = useState('');
 
   return (
       <div className={'nav-container'}>
-        <a href={'/'}>{NAME}</a>
+        <a href={'/'} className={"main-link"}>{NAME}</a>
         <div className={'links'}>
-          {SECTIONS.map((section) => {
+          {MenuSections.map((section) => {
             return (
                 <a href={`#${section}`} key={section} onClick={() => setActive(section)}>
-                  <div className={`item ${active === section ? 'active' : ''}`}>{section}</div>
+                  <div className={`item ${active === section ? 'active' : ''}`}>{SectionNames[section]}</div>
                 </a>
             );
           })}

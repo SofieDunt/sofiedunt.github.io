@@ -14,8 +14,11 @@
   color: white;
   font-size: 22px;
   font-family: var(--font-one), var(--font-default);
-  text-transform: uppercase;
   text-decoration: none;
+}
+
+.main-link {
+  text-transform: uppercase;
 }
 
 .links {

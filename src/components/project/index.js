@@ -14,22 +14,31 @@ props:
 function Project(props) {
   const [active, setActive] = useState(false);
 
+  const onClickMe = (event) => {
+    if (event.target === event.currentTarget) {
+      setActive((cur) => !cur);
+    }
+  }
+
   if (active) {
     return (
         <div className={"card active-card"} onClick={() => setActive(false)}>
-          <p className={"title"}><a href={props.link} target={"_blank"} rel={"noreferrer"} className={"link-title"}>{props.title}</a>&ensp;| {props.date}</p>
-          {props.body}
+          <div className={"title inline-flex"}>
+            <a href={props.link} target={"_blank"} rel={"noreferrer"} className={"link-title"} onClick={onClickMe}>{props.title}</a>
+            <p>&ensp;| {props.date}</p>
+          </div>
+          <div className={"child-body"}>{props.body}</div>
         </div>
     );
   } else {
     return (
-        <div className={"card"} onClick={() => setActive(true)}>
-          <div className={"card-body"}>
+        <div className={"card"} onClick={onClickMe}>
+          <div className={"card-body"} onClick={onClickMe}>
             <h2 className={"title"}>{props.title}</h2>
-            {props.children}
+            <div className={"child-body"}>{props.children}</div>
           </div>
           <span className={"card-image"}>
-            <img src={props.image} alt={"Project"}/>
+            <img src={props.image} alt={"Project"} onClick={onClickMe} />
           </span>
         </div>
     );

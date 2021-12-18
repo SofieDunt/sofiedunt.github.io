@@ -21,6 +21,10 @@
   padding: 50px 5vw;
 }
 
+.padded {
+  padding: 0 5vw;
+}
+
 .title {
   width: 100%;
   font-family: var(--font-one), var(--font-default);
@@ -32,4 +36,29 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.inline-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.code-button {
+  font-family: "Fira Code", sans-serif;
+  font-size: 12px;
+  padding: 2px 8px;
+  background: white;
+  border: solid 1px var(--lightgrey);
+  margin: 2px;
+}
+
+.code-button:hover {
+  font-style: italic;
+  text-transform: uppercase;
+  border: solid 2px black;
 }

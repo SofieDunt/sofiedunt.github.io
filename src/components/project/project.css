@@ -23,10 +23,9 @@
 
 .card-body {
   display: inline-block;
-  height: 100%;
   vertical-align: center;
   text-align: center;
-  line-height: 175px;
+  padding: 0 20px;
   flex-grow: 2;
 }
 
@@ -35,6 +34,7 @@
   font-size: 18px;
   color: var(--navy);
   display: inline-block;
+  margin: 0;
 }
 
 .link-title {
@@ -42,5 +42,18 @@
   font-weight: bold;
   font-size: 26px;
   color: var(--navy);
+}
+
+.title a {
   display: inline-block;
+  margin: 0;
+}
+
+.title p {
+  display: inline-block;
+  margin: 0;
+}
+
+.child-body {
+  margin: 0;
 }
