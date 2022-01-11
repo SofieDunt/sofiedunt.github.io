@@ -16,22 +16,21 @@
 }
 
 .red {
-  background: #FCD4D4;
+  background: #fcd4d4;
   border-color: #820707;
 }
 
 .blue {
-  background: #CCE6FF;
+  background: #cce6ff;
   border-color: #073057;
 }
 
 .purple {
-  background: #D2D2FC;
-  border-color: #1A1A40;
+  background: #d2d2fc;
+  border-color: #1a1a40;
 }
 
 .green {
-  background: #D9FFE2;
+  background: #d9ffe2;
   border-color: #044214;
-
 }

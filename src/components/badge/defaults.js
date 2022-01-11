@@ -1,5 +1,5 @@
 import React from 'react';
-import Badge, { BadgeColors } from "./index";
+import Badge, { BadgeColors } from './index';
 
 export const DefaultBadges = {
   JAVA: { title: 'Java', color: BadgeColors.RED },
@@ -9,9 +9,10 @@ export const DefaultBadges = {
   VERTX: { title: 'Vert.x', color: BadgeColors.GREEN },
   SPRING: { title: 'Spring', color: BadgeColors.GREEN },
   R: { title: 'R', color: BadgeColors.GREEN },
-}
+  NODE: { title: 'Node.js', color: BadgeColors.GREEN },
+};
 
 export function DefaultBadge(props) {
   const { badge } = props;
-  return <Badge title={badge.title} color={badge.color} />
+  return <Badge title={badge.title} color={badge.color} />;
 }

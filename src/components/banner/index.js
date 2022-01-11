@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './banner.css';
-import { ABOUT_ME, Icons, Links, TITLES } from "../../content";
+import { ABOUT_ME, Icons, Links, TITLES } from '../../content';
 
 function Banner() {
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -27,7 +27,7 @@ function Banner() {
       } else {
         return 75;
       }
-    }
+    };
 
     const timeout = setTimeout(() => {
       if (isErasing) {
@@ -51,12 +51,10 @@ function Banner() {
 
       <div className="contacts">
         <a href={Links.EMAIL}>
-          <img src={Icons.EMAIL}
-               alt="E-mail"/>
+          <img src={Icons.EMAIL} alt="E-mail" />
         </a>
         <a href={Links.GITHUB}>
-          <img src={Icons.GITHUB}
-               alt="Github"/>
+          <img src={Icons.GITHUB} alt="Github" />
         </a>
       </div>
     </div>

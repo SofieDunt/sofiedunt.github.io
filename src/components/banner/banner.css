@@ -3,7 +3,12 @@
   min-height: 100vh;
   padding: 35vh 5vw 30px;
   color: white;
-  background: linear-gradient(238.63deg, #052A57 -13.84%, rgba(9, 31, 145, 0) 81.76%), #000000;
+  background: linear-gradient(
+      238.63deg,
+      #052a57 -13.84%,
+      rgba(9, 31, 145, 0) 81.76%
+    ),
+    #000000;
 }
 
 .greeting-container {

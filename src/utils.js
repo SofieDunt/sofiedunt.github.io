@@ -5,7 +5,7 @@
  */
 export const mobileWidth = (width) => {
   return width < 600;
-}
+};
 
 /**
  * Returns hash location without the #.
@@ -18,4 +18,4 @@ export const getSectionFromHash = (hash) => {
   } else {
     return '';
   }
-}
+};

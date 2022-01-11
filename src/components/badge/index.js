@@ -6,7 +6,7 @@ export const BadgeColors = {
   BLUE: 'blue',
   PURPLE: 'purple',
   GREEN: 'green',
-}
+};
 
 function Badge(props) {
   const { title, color } = props;

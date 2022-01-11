@@ -1,13 +1,13 @@
 :root {
-  --lightgrey: #3B4358;
-  --grey: #1B2234;
-  --navy: #052A57;
+  --lightgrey: #3b4358;
+  --grey: #1b2234;
+  --navy: #052a57;
   --blue: #004cb0;
-  --lightblue: #E3EAF4;
-  --readable-lightblue: #6A90C4;
-  --font-one: "Noto Sans SC";
-  --font-two: "Nunito Sans";
-  --font-code: "Fira Code";
+  --lightblue: #e3eaf4;
+  --readable-lightblue: #6a90c4;
+  --font-one: 'Noto Sans SC';
+  --font-two: 'Nunito Sans';
+  --font-code: 'Fira Code';
   --font-default: sans-serif;
 }
 
@@ -59,6 +59,10 @@
   font-size: 12px;
 }
 
+.med-text {
+  font-size: 14px;
+}
+
 .code-button {
   font-family: var(--font-code), var(--font-default);
   font-size: 12px;
@@ -68,7 +72,8 @@
   margin: 2px;
 }
 
-.code-button:hover, .code-button:active {
+.code-button:hover,
+.code-button:active {
   font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
