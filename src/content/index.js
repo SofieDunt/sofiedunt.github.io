@@ -1,6 +1,5 @@
 import Default from './butterfly/default.PNG';
 import Blur from './butterfly/butterflyBlur.PNG';
-import Downscale from './butterfly/butterflyDownscale.png';
 import Monochrome from './butterfly/butterflyMonochrome.PNG';
 import Mosaic from './butterfly/butterflyMosaic.PNG';
 import Sepia from './butterfly/butterflySepia.PNG';
@@ -68,7 +67,6 @@ export const BUTTERFLIES = [
   { name: 'Load Default', img: Default },
   { name: 'Blur', img: Blur },
   { name: 'Sharpen', img: Sharpen },
-  { name: 'Downscale', img: Downscale },
   { name: 'Monochrome', img: Monochrome },
   { name: 'Sepia', img: Sepia },
   { name: 'Mosaic', img: Mosaic },

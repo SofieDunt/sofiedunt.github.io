@@ -1,15 +1,16 @@
 .card {
   box-sizing: border-box;
-  width: 400px;
-  height: 250px;
-  border: solid 1px var(--lightblue);
+  width: 425px;
+  height: 275px;
+  border: solid 1px var(--navy);
+  border-radius: 5px;
   font-family: var(--font-one), var(--font-default);
   font-size: 16px;
   display: flex;
   align-items: center;
-  box-shadow: 10px 10px var(--grey);
+  box-shadow: 7px 7px var(--grey);
   margin-bottom: 20px;
-  transition: all 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
 }
 
 .card:hover {
@@ -17,23 +18,23 @@
 }
 
 .card-image {
-  width: 250px;
-  height: 248px;
+  width: 350px;
+  height: 273px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  overflow: hidden;
 }
 
 .card img {
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: 100%;
 }
 
 .active-card {
   padding: 20px;
   display: block;
-  box-shadow: -10px -10px var(--grey);
-  transition: all 0.2s ease-in;
+  box-shadow: -7px -7px var(--grey);
 }
 
 .card-body {

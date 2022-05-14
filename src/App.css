@@ -46,7 +46,7 @@
 }
 
 .card-section {
-  row-gap: 20px;
+  gap: 40px 20px;
 }
 
 .inline-flex {

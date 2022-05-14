@@ -8,8 +8,10 @@ import Project from './components/project';
 import Logo from './content/logo.png';
 import SFTTSite from './content/SFTTSite.png';
 import Saga from './content/saga.png';
-import PlantCam from './content/PlantCam.png';
+import PlantCam from './content/plantcam.png';
+import Risk from './content/risk.png';
 import Maze from './content/maze.png';
+import IHESJR from './content/ihesjr.png';
 import { DefaultBadges } from './components/badge/defaults';
 
 function App() {
@@ -25,6 +27,26 @@ function App() {
           <h1>Right now, I'm working on...</h1>
           <div className={'flex-section card-section'}>
             <Project
+              title={'Health Equity Research'}
+              body={
+                <p>
+                  a qualitative analysis of focus group discussions to reveal
+                  and improve the current state and impact of government
+                  administrative practices on the well-being of the human
+                  services sector.
+                </p>
+              }
+              date={'Jan 2022-Present'}
+              image={IHESJR}
+              badges={[DefaultBadges.RESEARCH]}
+            />
+          </div>
+        </div>
+
+        <div className={'section'} id={SectionIds.COMPLETED_PROJECTS}>
+          <h1>Some of my completed projects include...</h1>
+          <div className={'flex-section card-section'}>
+            <Project
               title={'Adopt A Tree Web App'}
               body={
                 <p>
@@ -36,7 +58,7 @@ function App() {
                   expand Boston's urban forest.
                 </p>
               }
-              date={'Aug 2020-Present'}
+              date={'Aug 2020-May 2022'}
               link={Links.SFTT_SITE}
               image={SFTTSite}
               badges={[
@@ -47,26 +69,33 @@ function App() {
               ]}
             />
             <Project
+              title={'Vector Risk Visualizer'}
+              body={
+                <p>
+                  the basis of a Shiny application to visualize the
+                  spatial and temporal variation in mosquito abundance to help
+                  managers combat the extinction of Hawaiian bird species
+                  caused by avian malaria transmission.
+                </p>
+              }
+              date={'Mar-May 2022'}
+              image={Risk}
+              badges={[DefaultBadges.R]}
+            />
+            <Project
               title={'plantCam'}
               body={
                 <p>
-                  redesigning an informative website about the state of
-                  endangered plants in Hawaii. optimizing the analysis and
-                  visualization of real-time data collected by multiple field
-                  sensors.
+                  an informative website about the state of endangered plants
+                  in Hawaii, with optimized analysis and visualization of
+                  real-time data collected by multiple field sensors.
                 </p>
               }
-              date={'Aug 2021-Present'}
+              date={'Aug 2021-Mar 2022'}
               link={Links.PLANT_CAM}
               image={PlantCam}
               badges={[DefaultBadges.R]}
             />
-          </div>
-        </div>
-
-        <div className={'section'} id={SectionIds.COMPLETED_PROJECTS}>
-          <h1>Some of my completed projects include...</h1>
-          <div className={'flex-section card-section'}>
             <Project
               title={'Maze 2.0'}
               body={
@@ -110,6 +139,7 @@ function App() {
               date={'Mar 2021-Nov 2021'}
               image={Links.DE_RESEARCH_PHOTO}
               link={Links.LBFE}
+              badges={[DefaultBadges.RESEARCH]}
             />
             <Project
               title={'Story Player & Writer'}

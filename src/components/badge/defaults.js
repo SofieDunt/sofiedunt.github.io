@@ -10,6 +10,7 @@ export const DefaultBadges = {
   SPRING: { title: 'Spring', color: BadgeColors.GREEN },
   R: { title: 'R', color: BadgeColors.GREEN },
   NODE: { title: 'Node.js', color: BadgeColors.GREEN },
+  RESEARCH: { title: 'Research', color: BadgeColors.RED },
 };
 
 export function DefaultBadge(props) {
