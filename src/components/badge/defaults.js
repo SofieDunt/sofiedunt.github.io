@@ -11,6 +11,7 @@ export const DefaultBadges = {
   R: { title: 'R', color: BadgeColors.GREEN },
   NODE: { title: 'Node.js', color: BadgeColors.GREEN },
   RESEARCH: { title: 'Research', color: BadgeColors.RED },
+  PYTHON: { title: 'Python', color: BadgeColors.BLUE },
 };
 
 export function DefaultBadge(props) {

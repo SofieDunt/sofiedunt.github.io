@@ -5,17 +5,17 @@ import './project.css';
 /*
 props:
 - title: string
-- body: JSX Element
+- titleBody?: JSX Element
+- description: JSX Element
 - date: string
 - link?: string
 - image: image
 - badges: DefaultBadges[]
-- children: front body
  */
 
 function Project(props) {
   const [active, setActive] = useState(false);
-  const { title, body, date, link, image, badges, children } = props;
+  const { title, titleBody, description, date, link, image, badges } = props;
 
   const onClickMe = (event) => {
     if (event.target === event.currentTarget) {
@@ -39,7 +39,7 @@ function Project(props) {
           <p>&ensp;| {date}</p>
         </div>
         <div className={'child-body'}>
-          {body}
+          {description}
           <div className={'badge-bar'}>
             {badges &&
               badges.map((badge) => {
@@ -56,7 +56,7 @@ function Project(props) {
           <h2 className={'title'} onClick={onClickMe}>
             {title}
           </h2>
-          <div className={'child-body'}>{children}</div>
+          <div className={'child-body'}>{titleBody}</div>
         </div>
         <div className={'card-image'} onClick={() => setActive(true)}>
           <img src={image} alt={'Project'} />

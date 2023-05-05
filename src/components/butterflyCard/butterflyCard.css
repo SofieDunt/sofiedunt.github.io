@@ -1,0 +1,16 @@
+.code-button {
+  font-family: var(--font-code), var(--font-default);
+  font-size: 12px;
+  padding: 2px 8px;
+  background: white;
+  border: solid 1px var(--lightgrey);
+  margin: 2px;
+}
+
+.code-button:hover,
+.code-button:active {
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: solid 1px black;
+}
