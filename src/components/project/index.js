@@ -6,13 +6,12 @@ import './project.css';
 props:
 - title: string
 - titleBody?: JSX Element
-- description: string | { custom: JSX Element }
+- description: { text: string, custom: JSX Element }
 - date: string
 - link?: string
 - image: image
 - badges: DefaultBadges[]
- */
-
+*/
 function Project(props) {
   const [active, setActive] = useState(false);
   const { title, titleBody, description, date, link, image, badges } = props;
@@ -41,8 +40,8 @@ function Project(props) {
         <div className={'child-body'}>
           {description.custom ?
             description.custom :
-            <p className={description.length >= 190 ? 'med-text' : null}>
-              {description}
+            <p className={description.text.length >= 190 ? 'med-text' : null}>
+              {description.text}
             </p>
           }
           <div className={'badge-bar'}>

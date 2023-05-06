@@ -5,27 +5,9 @@ import Banner from './components/banner';
 import Footer from './components/footer';
 import { SectionIds, Links } from './content';
 import { ACTIVE_PROJECTS, COMPLETED_PROJECTS } from './content/projects';
-import Project from './components/project';
+import ProjectsList from './components/projectsList';
 
 function App() {
-
-  const mapProjectList = (projectList) => {
-    return projectList.map((project, idx) =>
-      project.customElement ?
-        <React.Fragment key={idx}>{project.customElement}</React.Fragment> :
-        <Project
-          key={idx}
-          title={project.title}
-          titleBody={project.titleBody}
-          description={project.description}
-          date={project.date}
-          link={project.link}
-          image={project.image}
-          badges={project.badges}
-        />,
-    );
-  };
-
   return (
     <div className={'app'}>
       <NavBar />
@@ -33,19 +15,16 @@ function App() {
 
       <div className={'body'}>
         {ACTIVE_PROJECTS.length > 0 &&
-          <div className={'section'} id={SectionIds.CURRENT_PROJECTS}>
+          <div className={'section'} id={SectionIds.COMPLETED_PROJECTS}>
             <h1>Right now, I'm working on...</h1>
-            {mapProjectList(ACTIVE_PROJECTS)}
+            <ProjectsList projects={ACTIVE_PROJECTS} />
           </div>
         }
 
         {COMPLETED_PROJECTS.length > 0 &&
-          <div className={'section'}
-               id={SectionIds.COMPLETED_PROJECTS}>
+          <div className={'section'} id={SectionIds.COMPLETED_PROJECTS}>
             <h1>Some of my completed projects include...</h1>
-            <div className={'flex-section card-section'}>
-              {mapProjectList(COMPLETED_PROJECTS)}
-            </div>
+            <ProjectsList projects={COMPLETED_PROJECTS} />
           </div>
         }
       </div>

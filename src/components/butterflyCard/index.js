@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
 import { BUTTERFLIES } from '../../content';
-import { DefaultBadges } from '../badge/defaults';
 import Project from '../project';
 import './butterflyCard.css';
 
-function ButterflyCard() {
+/*
+props:
+- title: string
+- description: { text: string, custom: JSX Element }
+- date: string
+- badges: DefaultBadges[]
+*/
+function ButterflyCard(props) {
+  const { title, description, date, badges } = props;
   const [activePhoto, setActivePhoto] = useState(0);
 
   return (
     <Project
-      title={'Photo Editor'}
+      title={title}
       titleBody={
         <>
           <p className={'small-text'}>Supported modifications include:</p>
@@ -29,16 +36,10 @@ function ButterflyCard() {
           <p className={'small-text'}>...and more!</p>
         </>
       }
-      description={
-        <p>
-          an application capable of importing images to, exporting
-          images from, and modifying images in a user's photo library.
-          written in Java and tested with JUnit.
-        </p>
-      }
-      date={'June 2021'}
+      description={description}
+      date={date}
       image={BUTTERFLIES[activePhoto].img}
-      badges={[DefaultBadges.JAVA]}
+      badges={badges}
     />
   );
 }
