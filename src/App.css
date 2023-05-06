@@ -9,11 +9,14 @@
   --font-two: 'Nunito Sans';
   --font-code: 'Fira Code';
   --font-default: sans-serif;
+  --lg-font-size: 1.125rem;
+  --med-font-size: 0.938rem;
+  --sm-font-size: 0.75rem;
 }
 
 .app {
   box-sizing: border-box;
-  min-width: 300px;
+  min-width: 18.75rem;
   width: 100vw;
   font-family: var(--font-one), var(--font-default);
 }
@@ -23,19 +26,19 @@
 }
 
 .section {
-  padding: 75px 5vw 0;
+  padding: 4.688rem 5vw 0;
 }
 
 .section h1 {
   width: 100%;
   font-family: var(--font-one), var(--font-default);
-  font-size: 32px;
+  font-size: 2rem;
   color: var(--readable-lightblue);
   transition: all 0.3s ease-in-out;
 }
 
 .section:hover h1 {
-  transform: translateX(20px);
+  transform: translateX(1.25rem);
   color: var(--navy);
 }
 
@@ -46,7 +49,7 @@
 }
 
 .card-section {
-  gap: 40px 20px;
+  gap: 2.5rem 1.25rem;
 }
 
 .inline-flex {
@@ -56,15 +59,15 @@
 }
 
 .small-text {
-  font-size: 12px;
+  font-size: var(--sm-font-size);
 }
 
 .med-text {
-  font-size: 14px;
+  font-size: var(--med-font-size);
 }
 
 .footnotes {
-  font-size: 11px;
+  font-size: 0.688rem;
   margin: 0;
-  line-height: 11px;
+  line-height: 0.688rem;
 }

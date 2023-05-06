@@ -1,16 +1,16 @@
 .footer {
   box-sizing: border-box;
   margin-top: 15px;
-  min-height: 80px;
-  padding: 20px 20px;
+  min-height: 5rem;
+  padding: 1.25rem;
   color: white;
   background: var(--grey);
-  font-size: 15px;
+  font-size: var(--med-font-size);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 15px 30px;
+  gap: 0.938rem 1.875rem;
 }
 
 .footer p {

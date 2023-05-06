@@ -1,16 +1,19 @@
 .card {
   box-sizing: border-box;
-  width: 425px;
-  height: 275px;
+  width: 21.875rem;
+  height: 17.188rem;
   border: solid 1px var(--navy);
   border-radius: 5px;
   font-family: var(--font-one), var(--font-default);
-  font-size: 16px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   box-shadow: 7px 7px var(--grey);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   transition: box-shadow 0.2s ease-in;
+}
+
+.card.title-body {
+  align-items: center;
 }
 
 .card:hover {
@@ -18,8 +21,8 @@
 }
 
 .card-image {
-  width: 350px;
-  height: 273px;
+  width: 9.375rem;
+  height: 17.063rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -27,36 +30,46 @@
 }
 
 .card img {
-  width: auto;
+  width: 9.375rem;
   height: 100%;
 }
 
 .active-card {
-  padding: 20px;
+  padding: 1.25rem;
   display: block;
   box-shadow: -7px -7px var(--grey);
 }
 
 .card-body {
   display: inline-block;
-  vertical-align: center;
-  text-align: center;
-  padding: 0 20px;
+  text-align: right;
   flex-grow: 2;
 }
 
+.title-body > .card-body {
+  padding: 0 1.25rem;
+  width: 12.5rem;
+  text-align: center;
+}
+
 .card .title {
+  background: white;
+  padding: 0.5rem;
   font-weight: bold;
-  font-size: 18px;
+  font-size: var(--lg-font-size);
   color: var(--navy);
   display: inline-block;
   margin: 0;
 }
 
+.card.title-body .title {
+  padding: 0;
+}
+
 .link-title {
   text-decoration: underline;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: var(--navy);
 }
 
@@ -74,17 +87,22 @@
   margin: 0;
 }
 
+.child-body > p {
+  margin: 0;
+}
+
 .badge-bar {
+  margin-top: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
   .card {
     width: 90vw;
-    height: 275px;
-    font-size: 15px;
+    height: 17.188rem;
+    font-size: var(--med-font-size);
   }
 
   .card-image {

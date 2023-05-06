@@ -1,7 +1,7 @@
 .banner {
   box-sizing: border-box;
   min-height: 100vh;
-  padding: 35vh 5vw 30px;
+  padding: 35vh 5vw 1.875rem;
   color: white;
   background: linear-gradient(
       238.63deg,
@@ -12,14 +12,14 @@
 }
 
 .greeting-container {
-  font-size: 32px;
+  font-size: 2rem;
   font-family: var(--font-one), var(--font-default);
 }
 
 .about-container {
   color: var(--lightblue);
-  padding-bottom: 100px;
-  font-size: 18px;
+  padding-bottom: 6.25rem;
+  font-size: var(--lg-font-size);
   font-family: var(--font-two), var(--font-default);
 }
 
@@ -29,27 +29,27 @@
 }
 
 .contacts img {
-  height: 45px;
+  height: 2.813rem;
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 68.688rem) {
   .greeting-container {
-    min-height: 200px;
+    min-height: 12.5rem;
   }
 }
 
-@media (max-width: 613px) {
+@media (max-width: 38.313rem) {
   .banner {
     padding-top: 25vh;
   }
 
   .greeting-container {
-    min-height: 300px;
+    min-height: 18.75rem;
   }
 }
 
-@media (max-width: 469px) {
+@media (max-width: 29.313rem) {
   .greeting-container {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 }

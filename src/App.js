@@ -10,9 +10,11 @@ import Project from './components/project';
 function App() {
 
   const mapProjectList = (projectList) => {
-    return projectList.map((project) =>
-      project.customElement ? project.customElement :
+    return projectList.map((project, idx) =>
+      project.customElement ?
+        <React.Fragment key={idx}>{project.customElement}</React.Fragment> :
         <Project
+          key={idx}
           title={project.title}
           titleBody={project.titleBody}
           description={project.description}

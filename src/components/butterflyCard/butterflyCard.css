@@ -1,7 +1,7 @@
 .code-button {
   font-family: var(--font-code), var(--font-default);
-  font-size: 12px;
-  padding: 2px 8px;
+  font-size: var(--sm-font-size);
+  padding: 0.125rem 0.5rem;
   background: white;
   border: solid 1px var(--lightgrey);
   margin: 2px;
