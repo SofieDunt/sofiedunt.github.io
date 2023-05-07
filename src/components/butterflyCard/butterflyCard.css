@@ -1,16 +1,23 @@
+.button-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: space-between;
+}
+
 .code-button {
+  background: white;
+  border: solid 1px var(--lightgrey);
   font-family: var(--font-code), var(--font-default);
   font-size: var(--sm-font-size);
   padding: 0.125rem 0.5rem;
-  background: white;
-  border: solid 1px var(--lightgrey);
-  margin: 2px;
+  width: calc(50% - 0.125rem);
 }
 
 .code-button:hover,
 .code-button:active {
+  border: solid 1px black;
   font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
-  border: solid 1px black;
 }

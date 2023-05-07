@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import Project from '../project';
 import SearchInput from '../searchInput';
+import './projectsList.css';
 
 /*
 props:
@@ -68,7 +69,7 @@ function ProjectsList(props) {
         placeholder={'Search by title, description, date, or language, ex. "research", "python"'}
         onSearch={onSearch}
       />
-      <div className={'flex-section card-section'}>
+      <div className={'card-section'}>
         {sortedProjs.map((project) => project.elem)}
       </div>
     </div>

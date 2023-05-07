@@ -20,7 +20,7 @@ function ButterflyCard(props) {
       titleBody={
         <>
           <p className={'small-text'}>Supported modifications include:</p>
-          <div className={'flex-section'}>
+          <div className={'button-section'}>
             {BUTTERFLIES.map((butterfly, index) => {
               return (
                 <button

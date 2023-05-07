@@ -1,23 +1,24 @@
 .card {
-  box-sizing: border-box;
-  width: 21.875rem;
-  height: 17.188rem;
+  align-items: flex-end;
   border: solid 1px var(--navy);
   border-radius: 5px;
-  font-family: var(--font-one), var(--font-default);
+  box-shadow: 3px 3px var(--grey);
+  box-sizing: border-box;
   display: flex;
-  align-items: flex-end;
-  box-shadow: 7px 7px var(--grey);
+  font-family: var(--font-one), var(--font-default);
+  height: 17.188rem;
   margin-bottom: 1.25rem;
   transition: box-shadow 0.2s ease-in;
+  width: 22rem;
 }
 
 .card.title-body {
   align-items: center;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.card:not(.active-card):hover {
+  box-shadow: 7px 7px var(--grey);
+  cursor: pointer;
 }
 
 .card-image {
@@ -35,9 +36,15 @@
 }
 
 .active-card {
-  padding: 1.25rem;
-  display: block;
-  box-shadow: -7px -7px var(--grey);
+  align-items: flex-start;
+  box-shadow: -3px -3px var(--grey);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0.5rem 0.5rem 1rem;
+}
+
+.active-card .card-content {
+  padding-right: 0.5rem;
 }
 
 .card-body {
@@ -47,19 +54,19 @@
 }
 
 .title-body > .card-body {
-  padding: 0 1.25rem;
+  padding: 0 0.5rem;
   width: 12.5rem;
   text-align: center;
 }
 
 .card .title {
   background: white;
-  padding: 0.5rem;
-  font-weight: bold;
-  font-size: var(--lg-font-size);
   color: var(--navy);
   display: inline-block;
+  font-size: var(--lg-font-size);
+  font-weight: bold;
   margin: 0;
+  padding: 0 0.5rem 0.5rem;
 }
 
 .card.title-body .title {
@@ -96,6 +103,20 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+}
+
+.card-footer {
+  height: 1.5rem;
+  text-align: right;
+  width: 100%;
+}
+
+.card-footer svg:hover {
+  cursor: pointer;
+}
+
+.card-footer svg:hover > path {
+  fill: var(--blue);
 }
 
 @media (max-width: 25rem) {

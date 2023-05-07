@@ -26,30 +26,16 @@
 }
 
 .section {
-  padding: 4.688rem 5vw 0;
+  padding: 2rem 5vw 0;
 }
 
 .section h1 {
-  width: 100%;
+  color: var(--navy);
   font-family: var(--font-one), var(--font-default);
   font-size: 2rem;
-  color: var(--readable-lightblue);
+  margin:  0.5rem 0;
   transition: all 0.3s ease-in-out;
-}
-
-.section:hover h1 {
-  transform: translateX(1.25rem);
-  color: var(--navy);
-}
-
-.flex-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.card-section {
-  gap: 2.5rem 1.25rem;
+  width: 100%;
 }
 
 .inline-flex {
