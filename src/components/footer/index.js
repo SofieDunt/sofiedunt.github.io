@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.css';
 import { DATE_UPDATED, EMAIL, Links } from '../../content';
 
-function Footer() {
+const Footer = () => {
   return (
     <div className={'footer'}>
       <p>Created by Sofie Duntugan | Updated {DATE_UPDATED}</p>

@@ -4,7 +4,7 @@ import React from 'react';
 props:
 - onClick?: (event: MouseEvent) => void
 */
-function FlipIcon({ onClick }) {
+const FlipIcon = ({ onClick }) => {
   return (
     <svg
       width='1.5rem'

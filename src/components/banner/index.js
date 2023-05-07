@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './banner.css';
 import { ABOUT_ME, Icons, Links, TITLES } from '../../content';
 
-function Banner() {
+const Banner = () => {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [currentLen, setCurrentLen] = useState(0);
   const [isErasing, setIsErasing] = useState(false);
@@ -45,20 +45,20 @@ function Banner() {
         <h1>Hi, I'm {TITLES[currentIdx].substr(0, currentLen)}|</h1>
       </div>
 
-      <div className="about-container">
+      <div className='about-container'>
         <p>{ABOUT_ME}</p>
       </div>
 
-      <div className="contacts">
+      <div className='contacts'>
         <a href={Links.EMAIL}>
-          <img src={Icons.EMAIL} alt="E-mail" />
+          <img src={Icons.EMAIL} alt='E-mail' />
         </a>
         <a href={Links.GITHUB}>
-          <img src={Icons.GITHUB} alt="Github" />
+          <img src={Icons.GITHUB} alt='Github' />
         </a>
       </div>
     </div>
   );
-}
+};
 
 export default Banner;

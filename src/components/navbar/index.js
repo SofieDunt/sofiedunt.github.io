@@ -3,9 +3,9 @@ import './navbar.css';
 import { Icons, NAME, MenuSections, SectionNames } from '../../content';
 import { mobileWidth, getSectionFromHash } from '../../utils';
 
-function NavBar() {
+const NavBar = () => {
   const [active, setActive] = useState(
-    getSectionFromHash(window.location.hash)
+    getSectionFromHash(window.location.hash),
   );
   const [isMobile, setIsMobile] = useState(mobileWidth(window.innerWidth));
   const [mobileActive, setMobileActive] = useState(false);
@@ -90,6 +90,6 @@ function NavBar() {
       {!isMobile ? <DesktopMenu /> : <MobileMenu />}
     </div>
   );
-}
+};
 
 export default NavBar;

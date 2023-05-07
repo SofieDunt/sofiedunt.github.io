@@ -8,14 +8,17 @@ export const BadgeColors = {
   GREEN: 'green',
 };
 
-function Badge(props) {
-  const { title, color } = props;
-
+/*
+props:
+- color: BadgeColors
+- title: string
+*/
+const Badge = ({ color, title }) => {
   return (
     <div className={`badge ${color}`}>
       <p>{title}</p>
     </div>
   );
-}
+};
 
 export default Badge;

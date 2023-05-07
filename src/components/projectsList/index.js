@@ -7,8 +7,7 @@ import './projectsList.css';
 props:
 - projects: Project[]
 */
-function ProjectsList(props) {
-  const { projects } = props;
+const ProjectsList = ({ projects }) => {
   const [sortedProjs, setSortedProjs] = useState([]);
 
   const mapProjectList = (projectList) => {

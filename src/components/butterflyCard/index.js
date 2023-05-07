@@ -5,13 +5,12 @@ import './butterflyCard.css';
 
 /*
 props:
-- title: string
-- description: { text: string, custom: JSX Element }
-- date: string
 - badges: DefaultBadges[]
+- date: string
+- description: { text: string, custom: JSX Element }
+- title: string
 */
-function ButterflyCard(props) {
-  const { title, description, date, badges } = props;
+const ButterflyCard = ({ badges, date, description, title }) => {
   const [activePhoto, setActivePhoto] = useState(0);
 
   return (
@@ -42,6 +41,6 @@ function ButterflyCard(props) {
       badges={badges}
     />
   );
-}
+};
 
 export default ButterflyCard;

@@ -5,17 +5,24 @@ import FlipIcon from '../../content/icons/flipIcon';
 
 /*
 props:
+- badges: DefaultBadges[]
+- date: string
+- description: { text: string, custom: JSX Element }
+- image: image
+- link?: string
 - title: string
 - titleBody?: JSX Element
-- description: { text: string, custom: JSX Element }
-- date: string
-- link?: string
-- image: image
-- badges: DefaultBadges[]
 */
-function Project(props) {
+const Project = ({
+  badges,
+  date,
+  description,
+  image,
+  link,
+  title,
+  titleBody,
+}) => {
   const [isActive, setIsActive] = useState(false);
-  const { title, titleBody, description, date, link, image, badges } = props;
 
   const onClickMe = (event) => {
     if (event.target === event.currentTarget) {
@@ -35,7 +42,7 @@ function Project(props) {
               className={'link-title'}
               onClick={onClickMe}
             >
-              {props.title}
+              {title}
             </a>
             <p>&ensp;| {date}</p>
           </div>
@@ -88,6 +95,6 @@ function Project(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Project;

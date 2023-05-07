@@ -7,8 +7,7 @@ props:
 - onSearch: (query: string) => void
 - placeholder: string
 */
-function SearchInput(props) {
-  const { id, onSearch, placeholder } = props;
+const SearchInput = ({ id, onSearch, placeholder }) => {
   const [lastQuery, setLastQuery] = useState('');
   const [currentQuery, setCurrentQuery] = useState('');
 

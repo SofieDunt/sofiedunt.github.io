@@ -7,7 +7,7 @@ import { SectionIds, Links } from './content';
 import { ACTIVE_PROJECTS, COMPLETED_PROJECTS } from './content/projects';
 import ProjectsList from './components/projectsList';
 
-function App() {
+const App = () => {
   return (
     <div className={'app'}>
       <NavBar />
@@ -42,6 +42,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
