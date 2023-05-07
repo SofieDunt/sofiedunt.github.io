@@ -49,11 +49,18 @@ const ProjectsList = ({ projects }) => {
   }, [renderedProjs]);
 
   const sortProjects = (query) => {
+    const queryTerms = query.split(',');
     setSortedProjs(renderedProjs.filter((proj) => {
-      return proj.title.includes(query)
-        || proj.description.includes(query)
-        || proj.date.includes(query)
-        || proj.badges.includes(query);
+      for (const term of queryTerms) {
+        if (proj.title.includes(term)
+          || proj.description.includes(term)
+          || proj.date.includes(term)
+          || proj.badges.includes(term)) {
+          return true;
+        }
+      }
+
+      return false;
     }));
   };
 
@@ -65,7 +72,7 @@ const ProjectsList = ({ projects }) => {
     <div>
       <SearchInput
         id={'search-projects'}
-        placeholder={'Search by title, description, date, or language, ex. "research", "python"'}
+        placeholder={'Search by title, description, date, or language, ex. "application", "python", "java,react"'}
         onSearch={onSearch}
       />
       <div className={'card-section'}>
@@ -73,6 +80,6 @@ const ProjectsList = ({ projects }) => {
       </div>
     </div>
   );
-}
+};
 
 export default ProjectsList;
