@@ -76,8 +76,12 @@
 .link-title {
   text-decoration: underline;
   font-weight: bold;
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   color: var(--navy);
+}
+
+.link-title.sm {
+  font-size: 1.4rem;
 }
 
 .title a {

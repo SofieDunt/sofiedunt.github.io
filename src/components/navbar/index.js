@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import './navbar.css';
-import { Icons, NAME, MenuSections, SectionNames } from '../../content';
+import { Icons, MenuSections, NAME, SectionNames } from '../../content';
 import { mobileWidth, getSectionFromHash } from '../../utils';
+import './navbar.css';
 
 const NavBar = () => {
   const [active, setActive] = useState(
     getSectionFromHash(window.location.hash),
   );
   const [isMobile, setIsMobile] = useState(mobileWidth(window.innerWidth));
-  const [mobileActive, setMobileActive] = useState(false);
+  const [isMobileActive, setIsMobileActive] = useState(false);
 
   useEffect(() => {
     function handleResize() {
@@ -26,7 +26,7 @@ const NavBar = () => {
 
   const onClickMobileItem = (section) => {
     setActive(section);
-    setMobileActive(false);
+    setIsMobileActive(false);
   };
 
   const MapLinks = (props) => {
@@ -62,10 +62,10 @@ const NavBar = () => {
   };
 
   const MobileMenu = () => {
-    if (mobileActive) {
+    if (isMobileActive) {
       return (
         <div className={'mobile-menu'}>
-          <div className={'links'} onClick={() => setMobileActive(false)}>
+          <div className={'links'} onClick={() => setIsMobileActive(false)}>
             <img className={'item'} src={Icons.CLOSE} alt={'menu'} />
           </div>
           <div className={'mobile-links'}>
@@ -75,7 +75,7 @@ const NavBar = () => {
       );
     } else {
       return (
-        <div className={'links'} onClick={() => setMobileActive(true)}>
+        <div className={'links'} onClick={() => setIsMobileActive(true)}>
           <img className={'item'} src={Icons.MENU} alt={'menu'} />
         </div>
       );

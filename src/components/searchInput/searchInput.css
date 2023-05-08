@@ -10,7 +10,7 @@
 
 .search-container > input {
   box-sizing: border-box;
-  background-image: url('../../content/icons/searchIcon.svg');
+  background-image: url('../../content/svgs/searchIcon.svg');
   background-position: 0.25rem 0.5rem;
   background-repeat: no-repeat;
   border: 1px solid var(--lightblue);

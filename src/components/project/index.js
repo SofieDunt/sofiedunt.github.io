@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { DefaultBadge } from '../badge/defaults';
+import { FlipIcon } from '../icons';
 import './project.css';
-import FlipIcon from '../../content/icons/flipIcon';
 
 /*
 props:
@@ -39,8 +39,7 @@ const Project = ({
               href={link}
               target={'_blank'}
               rel={'noreferrer'}
-              className={'link-title'}
-              onClick={onClickMe}
+              className={`link-title ${title.length > 20 ? 'sm' : ''}`}
             >
               {title}
             </a>

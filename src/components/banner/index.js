@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './banner.css';
 import { ABOUT_ME, Icons, Links, TITLES } from '../../content';
+import './banner.css';
 
 const Banner = () => {
   const [currentIdx, setCurrentIdx] = useState(0);

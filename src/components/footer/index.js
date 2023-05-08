@@ -1,6 +1,6 @@
 import React from 'react';
-import './footer.css';
 import { DATE_UPDATED, EMAIL, Links } from '../../content';
+import './footer.css';
 
 const Footer = () => {
   return (

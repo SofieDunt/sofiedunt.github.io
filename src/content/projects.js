@@ -1,13 +1,18 @@
-import IHESJR from './ihesjr.png';
 import { DefaultBadges } from '../components/badge/defaults';
-import SFTTSite from './SFTTSite.png';
-import Risk from './risk.png';
-import PlantCam from './plantcam.png';
-import Maze from './maze.png';
-import Logo from './logo.png';
-import Saga from './saga.png';
-import { Links } from './index';
 import ButterflyCard from '../components/butterflyCard';
+import {
+  Breaches,
+  IHESJR,
+  Lineage,
+  Maze,
+  MRB,
+  PlantCam,
+  Portfolio,
+  Risk,
+  Saga,
+  SFTT,
+} from './images';
+import { Links } from './main.js';
 
 export const ACTIVE_PROJECTS = [];
 
@@ -23,6 +28,39 @@ const photoEditorDetails = {
 };
 
 export const COMPLETED_PROJECTS = [
+  {
+    title: 'Data Breach Policy Memo',
+    description: {
+      text: 'an analysis of policy options to mitigate the damages of '
+        + 'personal data breaches, informed by Python data analysis.'
+    },
+    date: 'Feb-Apr 2023',
+    image: Breaches,
+    badges: [DefaultBadges.RESEARCH, DefaultBadges.PYTHON]
+  },
+  {
+    title: 'Lineage Classification',
+    description: {
+      text: 'an investigation into the effectiveness of machine learning '
+        + 'algorithms in classifying cell lineages and identifying genes '
+        + 'essential to tumorigenesis to guide targeted cancer treatment '
+        + 'development.',
+    },
+    date: 'Jan-Apr 2023',
+    image: Lineage,
+    badges: [DefaultBadges.RESEARCH, DefaultBadges.PYTHON],
+  },
+  {
+    title: 'Infestation Risk Calculator',
+    description: {
+      text: 'a Shiny application to calculate and visualize the risk of '
+        + 'invasive mussel populations across 2,470 hydrologic units within '
+        + 'the Missouri River Basin.',
+    },
+    date: 'Jun-Dec 2022',
+    image: MRB,
+    badges: [DefaultBadges.R],
+  },
   {
     title: 'Health Equity Research',
     description: {
@@ -50,7 +88,7 @@ export const COMPLETED_PROJECTS = [
     },
     date: 'Aug 2020-May 2022',
     link: Links.SFTT_SITE,
-    image: SFTTSite,
+    image: SFTT,
     badges:
       [
         DefaultBadges.REACT,
@@ -106,7 +144,7 @@ export const COMPLETED_PROJECTS = [
         + 'track of my latest experiences.',
     },
     date: 'November 2021',
-    image: Logo,
+    image: Portfolio,
     badges: [DefaultBadges.REACT, DefaultBadges.JS],
   },
   {

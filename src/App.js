@@ -1,11 +1,15 @@
 import React from 'react';
-import './App.css';
-import NavBar from './components/navbar';
 import Banner from './components/banner';
 import Footer from './components/footer';
-import { SectionIds, Links } from './content';
-import { ACTIVE_PROJECTS, COMPLETED_PROJECTS } from './content/projects';
+import NavBar from './components/navbar';
 import ProjectsList from './components/projectsList';
+import {
+  ACTIVE_PROJECTS,
+  COMPLETED_PROJECTS,
+  Links,
+  SectionIds,
+} from './content';
+import './App.css';
 
 const App = () => {
   return (
