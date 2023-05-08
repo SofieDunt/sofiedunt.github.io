@@ -1,21 +1,16 @@
 # Sofie Duntugan Portfolio
 
-An updated portfolio to showcase my experience and projects.
+An updated portfolio to showcase my experience and projects. View the live site
+at [https://sofiedunt.github.io/](https://sofiedunt.github.io/)!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
+## Scripts
 
 ### `npm start`
 
-Runs the app in the development mode.
+Runs the app locally in development mode.
 
-### `npm test`
+### `npm run deploy`
 
-Launches the test runner in the interactive watch mode.\
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
+Deploys the app to GitHub pages.
